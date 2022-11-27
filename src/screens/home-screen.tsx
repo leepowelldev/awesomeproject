@@ -32,7 +32,10 @@ function HomeScreen() {
       <Link to="/Profile">Profile</Link>
       <Link to="/Modal">React Navigation Screen Modal</Link>
 
-      <Button title="Show modals" onPress={handleShowModals} />
+      <View style={styles.buttonContainer}>
+        <Button title="Show modals" onPress={handleShowModals} />
+      </View>
+
       <Modal animationType="fade" transparent={true} visible={isModal1Visible}>
         <SafeAreaProvider>
           <SafeAreaView style={styles.root}>
@@ -65,6 +68,9 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
     padding: 20,
+  },
+  buttonContainer: {
+    marginTop: 40,
   },
 });
 
