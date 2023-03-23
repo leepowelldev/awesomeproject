@@ -1,19 +1,15 @@
 import React from 'react';
-import { ProfileForm } from '../features';
-import { Header, Layout } from '../components';
+import { Text } from 'react-native';
+import { Layout } from '../components';
 
-type ProfileScreenParamList = {};
+export type ProfileScreenParamsList = {};
 
-type ProfileScreenProps = {};
+export type ProfileScreenProps = {};
 
-function ProfileScreen() {
+export function ProfileScreen() {
   return (
-    <Layout>
-      <Header title="Profile" />
-      <ProfileForm />
+    <Layout title="Profile">
+      <Text>Profile</Text>
     </Layout>
   );
 }
-
-export { ProfileScreen };
-export type { ProfileScreenProps, ProfileScreenParamList };

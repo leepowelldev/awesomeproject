@@ -44,7 +44,6 @@ module.exports = {
       },
     ],
     'import/first': ['error'],
-    'import/exports-last': ['error'],
   },
   overrides: [
     {

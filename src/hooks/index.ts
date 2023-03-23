@@ -1,2 +1,2 @@
-export * from './use-debug-dependencies';
+export * from './use-hardware-back-button';
 export * from './use-previous';

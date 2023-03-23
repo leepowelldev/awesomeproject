@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { Button, Pressable, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { useHardwareBackButton } from '../hooks/use-disable-hardware-back-button';
+import { useHardwareBackButton } from '../hooks/use-hardware-back-button';
 
 function ModalScreen() {
   const { disable: disableHardwareBackButton } = useHardwareBackButton();
@@ -30,12 +30,7 @@ function ModalScreen() {
           ingredient and save you time from running back and forth from the
           pantry ten times.
         </Text>
-        <Button
-          title="Close"
-          onPress={() => {
-            navigation.goBack();
-          }}
-        />
+        <Button title="Close" onPress={navigation.goBack} />
       </View>
     </SafeAreaView>
   );
